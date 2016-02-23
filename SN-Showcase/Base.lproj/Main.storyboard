@@ -113,7 +113,7 @@
                                         </constraints>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GtD-gk-lfK" customClass="MaterialTextField" customModule="SN_Showcase" customModuleProvider="target">
                                         <rect key="frame" x="20" y="116" width="520" height="35"/>
@@ -123,7 +123,7 @@
                                         </constraints>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pN-QW-PHz" customClass="MaterialButton" customModule="SN_Showcase" customModuleProvider="target">
                                         <rect key="frame" x="168" y="166" width="224" height="33"/>
@@ -135,6 +135,9 @@
                                         <state key="normal" title="Login / Sign Up">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="emailBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g87-sm-NB7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -173,10 +176,33 @@
                             <constraint firstItem="TdY-g1-oCO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wEx-3B-yTw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="I4Z-ug-W3u" id="K5I-2w-lm5"/>
+                        <outlet property="passwordField" destination="GtD-gk-lfK" id="fA9-yt-4ul"/>
+                        <segue destination="AHg-HI-v3R" kind="show" identifier="loggedIn" id="OiB-el-7Nf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="251" y="342"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JNb-g6-3To">
+            <objects>
+                <viewController id="AHg-HI-v3R" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Inb-oC-kyu"/>
+                        <viewControllerLayoutGuide type="bottom" id="OFy-9O-Vc3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Gd-SI-dp1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.2156862745" green="0.52156862749999999" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ih3-Od-LV6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="896" y="342"/>
         </scene>
     </scenes>
     <resources>

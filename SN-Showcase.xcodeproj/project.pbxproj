@@ -24,6 +24,7 @@
 		1FDDE5051C7C9AE500572122 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FDDE5021C7C9AE500572122 /* Bolts.framework */; };
 		1FDDE5061C7C9AE500572122 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FDDE5031C7C9AE500572122 /* FBSDKCoreKit.framework */; };
 		1FDDE5071C7C9AE500572122 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FDDE5041C7C9AE500572122 /* FBSDKLoginKit.framework */; };
+		1FDDE50A1C7CC6F900572122 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDDE5091C7CC6F900572122 /* DataService.swift */; };
 		6B12AB731F0D9CFD7008CFB5 /* Pods_SN_Showcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F942DFE77E7AE542DB5392 /* Pods_SN_Showcase.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		1FDDE5021C7C9AE500572122 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		1FDDE5031C7C9AE500572122 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		1FDDE5041C7C9AE500572122 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		1FDDE5091C7CC6F900572122 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		A82A6742883BC9D8E7D335F6 /* Pods-SN-Showcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SN-Showcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-SN-Showcase/Pods-SN-Showcase.release.xcconfig"; sourceTree = "<group>"; };
 		BB3ABD06B8A111AAB7312D8A /* Pods-SN-Showcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SN-Showcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SN-Showcase/Pods-SN-Showcase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 		1FDDE4D61C7C80DA00572122 /* SN-Showcase */ = {
 			isa = PBXGroup;
 			children = (
+				1FDDE5081C7CC6E200572122 /* Services */,
 				1FDDE5011C7C9AB500572122 /* Frameworks */,
 				1FDDE4FA1C7C86BB00572122 /* Util */,
 				1FDDE4F71C7C81EA00572122 /* Model */,
@@ -156,6 +159,14 @@
 				1FDDE5041C7C9AE500572122 /* FBSDKLoginKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FDDE5081C7CC6E200572122 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1FDDE5091C7CC6F900572122 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		41BE0F0912B25AF19596CF14 /* Pods */ = {
@@ -309,6 +320,7 @@
 				1FDDE4D81C7C80DA00572122 /* AppDelegate.swift in Sources */,
 				1FDDE4F91C7C865B00572122 /* MaterialView.swift in Sources */,
 				1FDDE5001C7C900400572122 /* MaterialTextField.swift in Sources */,
+				1FDDE50A1C7CC6F900572122 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
