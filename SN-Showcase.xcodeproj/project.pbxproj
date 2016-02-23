@@ -13,6 +13,10 @@
 		1FDDE4E01C7C80DB00572122 /* SN_Showcase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FDDE4DE1C7C80DB00572122 /* SN_Showcase.xcdatamodeld */; };
 		1FDDE4E21C7C80DB00572122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FDDE4E11C7C80DB00572122 /* Assets.xcassets */; };
 		1FDDE4E51C7C80DB00572122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FDDE4E31C7C80DB00572122 /* LaunchScreen.storyboard */; };
+		1FDDE4F01C7C815500572122 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FDDE4EC1C7C815500572122 /* NotoSans-Bold.ttf */; };
+		1FDDE4F11C7C815500572122 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FDDE4ED1C7C815500572122 /* NotoSans-BoldItalic.ttf */; };
+		1FDDE4F21C7C815500572122 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FDDE4EE1C7C815500572122 /* NotoSans-Italic.ttf */; };
+		1FDDE4F31C7C815500572122 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FDDE4EF1C7C815500572122 /* NotoSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		1FDDE4E11C7C80DB00572122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FDDE4E41C7C80DB00572122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1FDDE4E61C7C80DB00572122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FDDE4EC1C7C815500572122 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		1FDDE4ED1C7C815500572122 /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		1FDDE4EE1C7C815500572122 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		1FDDE4EF1C7C815500572122 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				1FDDE4E31C7C80DB00572122 /* LaunchScreen.storyboard */,
 				1FDDE4E61C7C80DB00572122 /* Info.plist */,
 				1FDDE4DE1C7C80DB00572122 /* SN_Showcase.xcdatamodeld */,
+				1FDDE4EC1C7C815500572122 /* NotoSans-Bold.ttf */,
+				1FDDE4ED1C7C815500572122 /* NotoSans-BoldItalic.ttf */,
+				1FDDE4EE1C7C815500572122 /* NotoSans-Italic.ttf */,
+				1FDDE4EF1C7C815500572122 /* NotoSans-Regular.ttf */,
 			);
 			path = "SN-Showcase";
 			sourceTree = "<group>";
@@ -126,9 +138,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FDDE4F01C7C815500572122 /* NotoSans-Bold.ttf in Resources */,
 				1FDDE4E51C7C80DB00572122 /* LaunchScreen.storyboard in Resources */,
+				1FDDE4F11C7C815500572122 /* NotoSans-BoldItalic.ttf in Resources */,
+				1FDDE4F21C7C815500572122 /* NotoSans-Italic.ttf in Resources */,
 				1FDDE4E21C7C80DB00572122 /* Assets.xcassets in Resources */,
 				1FDDE4DD1C7C80DB00572122 /* Main.storyboard in Resources */,
+				1FDDE4F31C7C815500572122 /* NotoSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
