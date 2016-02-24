@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F568FEC1C7E51BC003E9EB2 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F568FEB1C7E51BC003E9EB2 /* FeedVC.swift */; };
+		1F568FEE1C7E5280003E9EB2 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F568FED1C7E5280003E9EB2 /* PostCell.swift */; };
 		1FDDE4D81C7C80DA00572122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDDE4D71C7C80DA00572122 /* AppDelegate.swift */; };
 		1FDDE4DA1C7C80DA00572122 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDDE4D91C7C80DA00572122 /* ViewController.swift */; };
 		1FDDE4DD1C7C80DB00572122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FDDE4DB1C7C80DB00572122 /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		15F942DFE77E7AE542DB5392 /* Pods_SN_Showcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SN_Showcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F568FEB1C7E51BC003E9EB2 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		1F568FED1C7E5280003E9EB2 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		1FDDE4D41C7C80DA00572122 /* SN-Showcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SN-Showcase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FDDE4D71C7C80DA00572122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FDDE4D91C7C80DA00572122 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 				1FDDE4FD1C7C8CDE00572122 /* MaterialButton.swift */,
 				1FDDE4FF1C7C900400572122 /* MaterialTextField.swift */,
 				1FDDE4D91C7C80DA00572122 /* ViewController.swift */,
+				1F568FEB1C7E51BC003E9EB2 /* FeedVC.swift */,
+				1F568FED1C7E5280003E9EB2 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -313,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F568FEC1C7E51BC003E9EB2 /* FeedVC.swift in Sources */,
 				1FDDE4E01C7C80DB00572122 /* SN_Showcase.xcdatamodeld in Sources */,
 				1FDDE4FC1C7C86D000572122 /* Constats.swift in Sources */,
 				1FDDE4FE1C7C8CDE00572122 /* MaterialButton.swift in Sources */,
@@ -321,6 +328,7 @@
 				1FDDE4F91C7C865B00572122 /* MaterialView.swift in Sources */,
 				1FDDE5001C7C900400572122 /* MaterialTextField.swift in Sources */,
 				1FDDE50A1C7CC6F900572122 /* DataService.swift in Sources */,
+				1F568FEE1C7E5280003E9EB2 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
