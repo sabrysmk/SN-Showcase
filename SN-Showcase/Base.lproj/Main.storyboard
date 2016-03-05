@@ -206,7 +206,7 @@
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="355" id="HvG-jM-5WP" customClass="PostCell" customModule="SN_Showcase" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" id="HvG-jM-5WP" customClass="PostCell" customModule="SN_Showcase" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="579" height="355"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HvG-jM-5WP" id="nvs-VJ-dgy">
@@ -245,7 +245,7 @@
                                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cuR-2f-eBc">
                                                                             <rect key="frame" x="220" y="0.0" width="60" height="50"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="11240" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zx7-AB-NfN">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="11240" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zx7-AB-NfN">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="60" height="24"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="width" constant="60" id="qTz-nu-cRC"/>
@@ -254,7 +254,7 @@
                                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Likes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkM-0f-C6n">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Likes" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DkM-0f-C6n">
                                                                                     <rect key="frame" x="0.0" y="24" width="60" height="26"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="width" constant="60" id="4Bh-ut-V7L"/>
@@ -304,6 +304,8 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
+                                            <outlet property="descriptionText" destination="eQ1-aN-p0y" id="4iL-PH-49j"/>
+                                            <outlet property="likesLbl" destination="Zx7-AB-NfN" id="fWA-OL-q9s"/>
                                             <outlet property="profileImg" destination="X7d-Ly-5f9" id="qhX-Qj-t3s"/>
                                             <outlet property="showcaseImg" destination="rKX-Kz-kfC" id="6At-rv-ePy"/>
                                         </connections>

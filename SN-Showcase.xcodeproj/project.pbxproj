@@ -127,6 +127,8 @@
 		1FDDE4F51C7C81CE00572122 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1F568FEB1C7E51BC003E9EB2 /* FeedVC.swift */,
+				1FDDE4D91C7C80DA00572122 /* ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -137,8 +139,6 @@
 				1FDDE4F81C7C865B00572122 /* MaterialView.swift */,
 				1FDDE4FD1C7C8CDE00572122 /* MaterialButton.swift */,
 				1FDDE4FF1C7C900400572122 /* MaterialTextField.swift */,
-				1FDDE4D91C7C80DA00572122 /* ViewController.swift */,
-				1F568FEB1C7E51BC003E9EB2 /* FeedVC.swift */,
 				1F568FED1C7E5280003E9EB2 /* PostCell.swift */,
 			);
 			name = View;
