@@ -194,7 +194,7 @@
         <!--FeedVC-->
         <scene sceneID="JNb-g6-3To">
             <objects>
-                <viewController id="AHg-HI-v3R" customClass="FeedVC" customModule="SN_Showcase" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AHg-HI-v3R" customClass="FeedVC" customModule="SN_Showcase" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Inb-oC-kyu"/>
                         <viewControllerLayoutGuide type="bottom" id="OFy-9O-Vc3"/>
@@ -215,7 +215,7 @@
                                                 <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="nSt-G9-fxl">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="nSt-G9-fxl" userLabel="Post Img">
                                                 <rect key="frame" x="461" y="0.0" width="37" height="37"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -223,7 +223,7 @@
                                                     <constraint firstAttribute="width" constant="37" id="pW8-BH-xbu"/>
                                                 </constraints>
                                                 <connections>
-                                                    <outletCollection property="gestureRecognizers" destination="tgW-dU-axv" appends="YES" id="WuH-9f-kxp"/>
+                                                    <outletCollection property="gestureRecognizers" destination="tgW-dU-axv" appends="YES" id="U4t-jB-Nsw"/>
                                                 </connections>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igK-9q-1lQ" customClass="MaterialButton" customModule="SN_Showcase" customModuleProvider="target">
@@ -351,10 +351,11 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
-                                            <outlet property="descriptionText" destination="eQ1-aN-p0y" id="4iL-PH-49j"/>
-                                            <outlet property="likesLbl" destination="Zx7-AB-NfN" id="fWA-OL-q9s"/>
-                                            <outlet property="profileImg" destination="X7d-Ly-5f9" id="qhX-Qj-t3s"/>
-                                            <outlet property="showcaseImg" destination="rKX-Kz-kfC" id="6At-rv-ePy"/>
+                                            <outlet property="appImg" destination="rKX-Kz-kfC" id="z6a-Li-MYQ"/>
+                                            <outlet property="descriptionText" destination="eQ1-aN-p0y" id="MmX-Hl-8hD"/>
+                                            <outlet property="likeImg" destination="3j2-RD-NEe" id="raT-um-IJ2"/>
+                                            <outlet property="likesLbl" destination="Zx7-AB-NfN" id="6ou-R8-1jx"/>
+                                            <outlet property="userImg" destination="X7d-Ly-5f9" id="tj7-QC-v9I"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -383,15 +384,15 @@
                     </view>
                     <navigationItem key="navigationItem" id="6hq-En-omB"/>
                     <connections>
-                        <outlet property="imageSelectorImage" destination="nSt-G9-fxl" id="H6X-Qz-PTl"/>
                         <outlet property="postField" destination="nC3-qX-LNF" id="qkK-UB-HfB"/>
+                        <outlet property="postImg" destination="nSt-G9-fxl" id="0Rq-6f-lzv"/>
                         <outlet property="tableView" destination="63K-Mk-Tr2" id="dMF-oU-oIi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ih3-Od-LV6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="tgW-dU-axv">
                     <connections>
-                        <action selector="selectImage:" destination="AHg-HI-v3R" id="iiK-nH-wBs"/>
+                        <action selector="selectPhoto:" destination="AHg-HI-v3R" id="Zjd-WJ-wmE"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
