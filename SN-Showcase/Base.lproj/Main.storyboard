@@ -12,8 +12,10 @@
             <string>NotoSans-Bold</string>
             <string>NotoSans-Bold</string>
             <string>NotoSans-Bold</string>
+            <string>NotoSans-Bold</string>
         </mutableArray>
         <mutableArray key="NotoSans-Regular.ttf">
+            <string>NotoSans</string>
             <string>NotoSans</string>
             <string>NotoSans</string>
             <string>NotoSans</string>
@@ -201,13 +203,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KZD-Nc-Z3U" customClass="MaterialView" customModule="SN_Showcase" customModuleProvider="target">
+                                <rect key="frame" x="11" y="72" width="579" height="72"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8St-80-GpS">
+                                        <rect key="frame" x="17" y="21" width="544" height="37"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Talk about your app" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nC3-qX-LNF" customClass="MaterialTextField" customModule="SN_Showcase" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="451" height="37"/>
+                                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="nSt-G9-fxl">
+                                                <rect key="frame" x="461" y="0.0" width="37" height="37"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="37" id="gbP-L8-GkA"/>
+                                                    <constraint firstAttribute="width" constant="37" id="pW8-BH-xbu"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="tgW-dU-axv" appends="YES" id="WuH-9f-kxp"/>
+                                                </connections>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igK-9q-1lQ" customClass="MaterialButton" customModule="SN_Showcase" customModuleProvider="target">
+                                                <rect key="frame" x="508" y="0.0" width="36" height="37"/>
+                                                <color key="backgroundColor" red="0.0" green="0.70588235294117641" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="NotoSans-Bold" family="Noto Sans" pointSize="14"/>
+                                                <state key="normal" title="POST">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="makePost:" destination="AHg-HI-v3R" eventType="touchUpInside" id="OiR-Dt-l5u"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="8St-80-GpS" firstAttribute="leading" secondItem="KZD-Nc-Z3U" secondAttribute="leadingMargin" id="AFR-sg-V02"/>
+                                    <constraint firstItem="8St-80-GpS" firstAttribute="top" secondItem="KZD-Nc-Z3U" secondAttribute="topMargin" id="AUW-5Q-SlR"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="8St-80-GpS" secondAttribute="trailing" id="ogT-SH-Psk"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="8St-80-GpS" secondAttribute="bottom" id="uV7-xt-nJ1"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="355" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="63K-Mk-Tr2">
-                                <rect key="frame" x="11" y="64" width="579" height="536"/>
+                                <rect key="frame" x="11" y="152" width="579" height="448"/>
                                 <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" id="HvG-jM-5WP" customClass="PostCell" customModule="SN_Showcase" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="579" height="355"/>
+                                        <rect key="frame" x="0.0" y="28" width="579" height="355"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HvG-jM-5WP" id="nvs-VJ-dgy">
                                             <rect key="frame" x="0.0" y="0.0" width="579" height="355"/>
@@ -315,7 +362,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="63K-Mk-Tr2" firstAttribute="top" secondItem="KZD-Nc-Z3U" secondAttribute="bottom" constant="8" id="6mR-WP-2Pt"/>
                             <constraint firstItem="63K-Mk-Tr2" firstAttribute="leading" secondItem="7Gd-SI-dp1" secondAttribute="leadingMargin" id="CGa-S7-GBa"/>
+                            <constraint firstItem="KZD-Nc-Z3U" firstAttribute="top" secondItem="Inb-oC-kyu" secondAttribute="bottom" constant="8" id="Jko-7c-lh1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KZD-Nc-Z3U" secondAttribute="trailing" id="Pfg-c4-Cwj"/>
+                            <constraint firstItem="KZD-Nc-Z3U" firstAttribute="leading" secondItem="7Gd-SI-dp1" secondAttribute="leadingMargin" id="Vvd-5M-aO0"/>
                             <constraint firstItem="63K-Mk-Tr2" firstAttribute="trailing" secondItem="7Gd-SI-dp1" secondAttribute="trailingMargin" id="XbX-Cz-xxC"/>
                             <constraint firstItem="63K-Mk-Tr2" firstAttribute="leading" secondItem="7Gd-SI-dp1" secondAttribute="leading" constant="10" id="XvH-15-6A8"/>
                             <constraint firstAttribute="trailing" secondItem="63K-Mk-Tr2" secondAttribute="trailing" constant="10" id="gKb-tV-5RT"/>
@@ -326,15 +377,23 @@
                             <mask key="constraints">
                                 <exclude reference="CGa-S7-GBa"/>
                                 <exclude reference="XbX-Cz-xxC"/>
+                                <exclude reference="iXa-J6-0d7"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="6hq-En-omB"/>
                     <connections>
+                        <outlet property="imageSelectorImage" destination="nSt-G9-fxl" id="H6X-Qz-PTl"/>
+                        <outlet property="postField" destination="nC3-qX-LNF" id="qkK-UB-HfB"/>
                         <outlet property="tableView" destination="63K-Mk-Tr2" id="dMF-oU-oIi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ih3-Od-LV6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="tgW-dU-axv">
+                    <connections>
+                        <action selector="selectImage:" destination="AHg-HI-v3R" id="iiK-nH-wBs"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1708" y="342"/>
         </scene>
@@ -359,6 +418,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera" width="50" height="50"/>
         <image name="code-icon-logo" width="318" height="281"/>
         <image name="fb-icon" width="65" height="65"/>
         <image name="heart-empty" width="150" height="147"/>
