@@ -152,7 +152,7 @@ class FeedVC: UIViewController, UITableViewDataSource, UITableViewDelegate,UIIma
                             })
                             
                         case .Failure(let error):
-                            print(error)
+                            print("this")
                             //Maybe show alert to user and let them try again
                         }
                 }
